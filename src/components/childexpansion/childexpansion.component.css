@@ -1,0 +1,50 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table, th, td {
+  border: 2px solid #ddd;
+}
+
+tr{
+  cursor: pointer;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+tr.selected {
+  background-color: #EE9322;
+  color: white;
+}
+
+tr.selected td {
+  font-weight: bold;
+}
+
+table table tr {
+  font-weight: normal;
+}
+
+.toggle-icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.toggle-icon::before {
+  content: "\25BC";
+}
+
+.toggle-icon.up::before {
+  content: "\25B2";
+}
+
+

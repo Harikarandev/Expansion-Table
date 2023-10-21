@@ -1,0 +1,8 @@
+.expansion-btns{
+    text-align: center;
+}
+.expansion-btns button{
+    padding: 10px;
+    background-color: beige;
+    margin: 10px;
+}

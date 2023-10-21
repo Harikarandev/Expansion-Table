@@ -1,0 +1,12 @@
+/* ::ng-deep .mat-expansion-panel{
+    height: 60px !important;
+}
+::ng-deep .mat-expansion-panel-header{
+    height:100% !important;
+    display: flex;
+    flex-direction: column;
+} */
+.expansion{
+    width: 50%;
+    margin: 30px auto;
+} 
