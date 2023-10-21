@@ -1,0 +1,19 @@
+<div class="expansion">
+    <div>
+       <h2>
+           Expansion Table       
+        </h2>
+    </div>
+    <mat-accordion>
+      <mat-expansion-panel *ngFor="let row of rows">
+        <mat-expansion-panel-header collapsedHeight="40px" expandedHeight="56px" (click)="toggleSelection(row)">
+          {{ row.text1 }} - {{ row.text2 }}
+        </mat-expansion-panel-header>
+        <div *ngIf="row.selected">
+          <div *ngFor="let child of row.children">
+            {{ child.text1 }} - {{ child.text2 }}
+          </div>
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+</div>
